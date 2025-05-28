@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online CV - Jouw Naam</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    header img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    section {
+      margin-bottom: 30px;
+    }
+    h2 {
+      border-bottom: 2px solid #2c3e50;
+      padding-bottom: 5px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .contact p, .skills ul, .experience ul, .education ul {
+      margin: 0;
+      padding: 0;
+    }
+    .skills li, .experience li, .education li {
+      margin-bottom: 10px;
+    }
+    @media screen and (max-width: 600px) {
+      header img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="https://via.placeholder.com/120" alt="Profielfoto" />
+    <h1>Jouw Naam</h1>
+    <p>Functietitel / Specialisatie</p>
+  </header>
+
+  <div class="container">
+
+    <section class="contact">
+      <h2>Contact</h2>
+      <p>Email: jouw.email@example.com</p>
+      <p>Telefoon: 06-12345678</p>
+      <p>LinkedIn: linkedin.com/in/jouwnaam</p>
+      <p>Website: www.jouwwebsite.nl</p>
+    </section>
+
+    <section class="skills">
+      <h2>Vaardigheden</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript</li>
+        <li>Python, Java</li>
+        <li>Projectmanagement</li>
+        <li>Agile / Scrum</li>
+      </ul>
+    </section>
+
+    <section class="experience">
+      <h2>Werkervaring</h2>
+      <ul>
+        <li>
+          <strong>Softwareontwikkelaar – Bedrijf A</strong><br>
+          Jan 2021 – heden<br>
+          Verantwoordelijk voor de ontwikkeling van webapplicaties in React en Node.js.
+        </li>
+        <li>
+          <strong>Junior Developer – Bedrijf B</strong><br>
+          Aug 2018 – Dec 2020<br>
+          Ondersteuning bij softwareontwikkeling en testen.
+        </li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>Opleiding</h2>
+      <ul>
+        <li>
+          <strong>Bachelor Informatica – Universiteit XYZ</strong><br>
+          2014 – 2018
+        </li>
+      </ul>
+    </section>
+
+  </div>
+
+</body>
+</html>
