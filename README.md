@@ -1,5 +1,20 @@
-# Welcome to GitHub Desktop!
+Online CV - Youri Stoop
+Dit is een eenvoudige en moderne online CV-pagina gemaakt in HTML en CSS. De pagina is ontworpen om overzichtelijk, responsief en visueel aantrekkelijk te zijn, met een fris kleurenpalet en nette typografie.
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
+Features
+Overzichtelijke indeling met secties: Contact, Vaardigheden, Werkervaring en Opleiding.
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+Responsive design, werkt goed op desktop, tablet en mobiel.
+
+Klikbare contactgegevens (e-mail, telefoon, LinkedIn en website).
+
+Gebruik van Google Fonts (Roboto) voor een moderne uitstraling.
+
+Visuele accenten met kleuren, schaduwen en animaties (fade-in, hover-effecten).
+
+Gebruik
+Open het index.html bestand in een webbrowser om de CV-pagina te bekijken.
+
+Pas de inhoud aan naar jouw eigen gegevens: naam, contactinformatie, vaardigheden, ervaring en opleiding.
+
+Upload eventueel naar een webserver of GitHub Pages om online beschikbaar te maken.
