@@ -4,185 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Online CV - Youri Stoop</title>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-    :root {
-      --primary-color: #2980b9;
-      --secondary-color: #34495e;
-      --background-color: #f9fbfd;
-      --text-color: #2c3e50;
-      --shadow-color: rgba(41, 128, 185, 0.2);
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Roboto', Arial, sans-serif;
-      margin: 0;
-      background-color: var(--background-color);
-      color: var(--text-color);
-      line-height: 1.6;
-      overflow-x: hidden;
-      animation: fadeIn 1s ease forwards;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(20px);}
-      to {opacity: 1; transform: translateY(0);}
-    }
-
-    header {
-      background: var(--primary-color);
-      color: white;
-      padding: 40px 20px 50px;
-      text-align: center;
-      box-shadow: 0 4px 15px var(--shadow-color);
-      position: relative;
-      overflow: hidden;
-    }
-
-    header img {
-      border-radius: 50%;
-      width: 140px;
-      height: 140px;
-      object-fit: cover;
-      margin-bottom: 15px;
-      border: 4px solid white;
-      box-shadow: 0 0 15px rgba(255 255 255 / 0.5);
-      transition: transform 0.3s ease;
-    }
-
-    header img:hover {
-      transform: scale(1.05) rotate(3deg);
-    }
-
-    header h1 {
-      margin: 0 0 8px;
-      font-weight: 700;
-      font-size: 2.8rem;
-      letter-spacing: 2px;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
-    }
-
-    header p {
-      font-size: 1.25rem;
-      font-style: italic;
-      opacity: 0.85;
-      margin-top: 0;
-    }
-
-    .container {
-      max-width: 900px;
-      background: white;
-      margin: -70px auto 40px;
-      padding: 30px 40px;
-      border-radius: 12px;
-      box-shadow: 0 8px 30px var(--shadow-color);
-      animation: fadeIn 1s ease forwards;
-    }
-
-    section {
-      margin-bottom: 40px;
-      border-left: 4px solid var(--primary-color);
-      padding-left: 20px;
-      animation: fadeIn 1.2s ease forwards;
-    }
-
-    section:last-child {
-      margin-bottom: 0;
-    }
-
-    h2 {
-      font-weight: 700;
-      font-size: 1.8rem;
-      margin-bottom: 15px;
-      color: var(--secondary-color);
-      text-transform: uppercase;
-      letter-spacing: 1.5px;
-      position: relative;
-    }
-
-    h2::after {
-      content: '';
-      display: block;
-      width: 60px;
-      height: 3px;
-      background: var(--primary-color);
-      margin-top: 8px;
-      border-radius: 2px;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 0;
-    }
-
-    li {
-      margin-bottom: 15px;
-      font-size: 1.1rem;
-    }
-
-    strong {
-      color: var(--primary-color);
-      font-weight: 700;
-    }
-
-    /* Contact section */
-    .contact p {
-      margin: 6px 0;
-      font-size: 1.1rem;
-    }
-
-    .contact a {
-      color: var(--primary-color);
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .contact a:hover {
-      text-decoration: underline;
-      color: #1c5980;
-    }
-
-    /* Responsive */
-    @media screen and (max-width: 700px) {
-      .container {
-        margin: -50px 20px 30px;
-        padding: 25px 20px;
-      }
-
-      header h1 {
-        font-size: 2.2rem;
-      }
-
-      header p {
-        font-size: 1rem;
-      }
-
-      header img {
-        width: 110px;
-        height: 110px;
-      }
-    }
-
-    @media screen and (max-width: 400px) {
-      header img {
-        width: 90px;
-        height: 90px;
-      }
-
-      h2 {
-        font-size: 1.5rem;
-      }
-
-      li {
-        font-size: 1rem;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
@@ -190,6 +12,7 @@
     <img src="https://via.placeholder.com/140" alt="Profielfoto" />
     <h1>YP Stoop</h1>
     <p>IT-expert in spe</p>
+    <button id="theme-toggle" aria-label="Toggle dark mode" title="Donkere modus aan/uit">🌙</button>
   </header>
 
   <div class="container">
@@ -216,13 +39,13 @@
       <h2>Werkervaring</h2>
       <ul>
         <li>
-          <strong>Softwareontwikkelaar – Bedrijf A</strong><br>
-          Jan 2021 – heden<br>
+          <strong>Softwareontwikkelaar – Bedrijf A</strong><br />
+          Jan 2021 – heden<br />
           Verantwoordelijk voor de ontwikkeling van webapplicaties in React en Node.js.
         </li>
         <li>
-          <strong>Junior Developer – Bedrijf B</strong><br>
-          Aug 2018 – Dec 2020<br>
+          <strong>Junior Developer – Bedrijf B</strong><br />
+          Aug 2018 – Dec 2020<br />
           Ondersteuning bij softwareontwikkeling en testen.
         </li>
       </ul>
@@ -232,7 +55,7 @@
       <h2>Opleiding</h2>
       <ul>
         <li>
-          <strong>Bachelor Informatica – Universiteit XYZ</strong><br>
+          <strong>Bachelor Informatica – Universiteit XYZ</strong><br />
           2014 – 2018
         </li>
       </ul>
@@ -240,6 +63,31 @@
 
   </div>
 
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Check opgeslagen voorkeur
+    if(localStorage.getItem('theme') === 'dark') {
+      body.classList.add('dark-mode');
+      toggleBtn.textContent = '☀️';
+    }
+
+    toggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+
+      // Update knop icoon
+      if(body.classList.contains('dark-mode')) {
+        toggleBtn.textContent = '☀️'; // zon icoon
+        localStorage.setItem('theme', 'dark');
+      } else {
+        toggleBtn.textContent = '🌙'; // maan icoon
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+
 </body>
 </html>
+
 
