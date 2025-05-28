@@ -13,4 +13,4 @@ git commit -m $commit_message
 git push origin main
 
 Write-Host "✅ Upload compleet. Je site wordt bijgewerkt..."
-Write-Host "🌐 Website: https://yps1995.github.io/testcvwebsite/"
+Write-Host "🌐 Website: https://yps1995.github.io/desktop-tutorial/"
